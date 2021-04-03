@@ -5,14 +5,6 @@
 //  Created by 大西玲音 on 2021/04/03.
 //
 
-
-//HelloWorldSubjectというSubjectを定義
-//Subjectwを購読
-//値が流れてきたらprint分で値を出力されるように定義
-//定義したクラスが破棄されたら購読も自動的に破棄させる
-//N回イベントをながす
-//定義したクロージャがN回実行される
-
 import UIKit
 import RxSwift
 
