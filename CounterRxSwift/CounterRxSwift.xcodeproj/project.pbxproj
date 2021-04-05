@@ -8,25 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		8801A85EA22D03C363E6871A /* Pods_CounterRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845E58E40FECF1CEAF782C4C /* Pods_CounterRxSwift.framework */; };
+		AB370C8F261B0DCD00554B21 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB370C8D261B0DCD00554B21 /* RxSwiftViewController.swift */; };
+		AB370C90261B0DCE00554B21 /* RxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB370C8E261B0DCD00554B21 /* RxSwiftViewController.xib */; };
+		AB370C94261B0E5800554B21 /* CounterViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB370C93261B0E5800554B21 /* CounterViewModelInput.swift */; };
+		AB370C9A261B0FB700554B21 /* RxCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB370C99261B0FB700554B21 /* RxCounterViewModel.swift */; };
 		AB7E41C3261AE7E8004D9926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41C2261AE7E8004D9926 /* AppDelegate.swift */; };
 		AB7E41C5261AE7E8004D9926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41C4261AE7E8004D9926 /* SceneDelegate.swift */; };
-		AB7E41C7261AE7E8004D9926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41C6261AE7E8004D9926 /* ViewController.swift */; };
+		AB7E41C7261AE7E8004D9926 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41C6261AE7E8004D9926 /* ClosureViewController.swift */; };
 		AB7E41CC261AE7ED004D9926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7E41CB261AE7ED004D9926 /* Assets.xcassets */; };
 		AB7E41CF261AE7ED004D9926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7E41CD261AE7ED004D9926 /* LaunchScreen.storyboard */; };
-		AB7E41DE261AE9CA004D9926 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7E41DD261AE9CA004D9926 /* ViewController.xib */; };
+		AB7E41DE261AE9CA004D9926 /* ClosureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7E41DD261AE9CA004D9926 /* ClosureViewController.xib */; };
+		AB7E41EB261AF0D8004D9926 /* ClosureCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41EA261AF0D8004D9926 /* ClosureCounterViewModel.swift */; };
+		AB7E41F2261AF65E004D9926 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41F0261AF65E004D9926 /* TopViewController.swift */; };
+		AB7E41F3261AF65E004D9926 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7E41F1261AF65E004D9926 /* TopViewController.xib */; };
+		AB7E41F9261AF7E4004D9926 /* CounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41F8261AF7E4004D9926 /* CounterPresenter.swift */; };
+		AB7E41FD261AF89F004D9926 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E41FC261AF89F004D9926 /* DelegateViewController.swift */; };
+		AB7E4202261AF8BD004D9926 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7E4201261AF8BD004D9926 /* DelegateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		030A556FA0103C837E78F86B /* Pods-CounterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounterRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-CounterRxSwift/Pods-CounterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		845E58E40FECF1CEAF782C4C /* Pods_CounterRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CounterRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB370C8D261B0DCD00554B21 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		AB370C8E261B0DCD00554B21 /* RxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftViewController.xib; sourceTree = "<group>"; };
+		AB370C93261B0E5800554B21 /* CounterViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModelInput.swift; sourceTree = "<group>"; };
+		AB370C99261B0FB700554B21 /* RxCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCounterViewModel.swift; sourceTree = "<group>"; };
 		AB7E41BF261AE7E8004D9926 /* CounterRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7E41C2261AE7E8004D9926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB7E41C4261AE7E8004D9926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB7E41C6261AE7E8004D9926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB7E41C6261AE7E8004D9926 /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		AB7E41CB261AE7ED004D9926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7E41CE261AE7ED004D9926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB7E41D0261AE7ED004D9926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB7E41DD261AE9CA004D9926 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		AB7E41DD261AE9CA004D9926 /* ClosureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosureViewController.xib; sourceTree = "<group>"; };
+		AB7E41EA261AF0D8004D9926 /* ClosureCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureCounterViewModel.swift; sourceTree = "<group>"; };
+		AB7E41F0261AF65E004D9926 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		AB7E41F1261AF65E004D9926 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		AB7E41F8261AF7E4004D9926 /* CounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPresenter.swift; sourceTree = "<group>"; };
+		AB7E41FC261AF89F004D9926 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		AB7E4201261AF8BD004D9926 /* DelegateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
 		E535E471C845A79F247AAB64 /* Pods-CounterRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounterRxSwift.release.xcconfig"; path = "Target Support Files/Pods-CounterRxSwift/Pods-CounterRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +70,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AB370C96261B0E6200554B21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AB7E41B6261AE7E8004D9926 = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +98,58 @@
 		AB7E41C1261AE7E8004D9926 /* CounterRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AB370C96261B0E6200554B21 /* Models */,
+				AB7E41FB261AF7E9004D9926 /* Presenters */,
+				AB7E41F7261AF756004D9926 /* ViewModels */,
+				AB7E41F6261AF752004D9926 /* Views */,
+				AB7E41F5261AF741004D9926 /* ViewControllers */,
 				AB7E41C2261AE7E8004D9926 /* AppDelegate.swift */,
 				AB7E41C4261AE7E8004D9926 /* SceneDelegate.swift */,
-				AB7E41C6261AE7E8004D9926 /* ViewController.swift */,
-				AB7E41DD261AE9CA004D9926 /* ViewController.xib */,
 				AB7E41CB261AE7ED004D9926 /* Assets.xcassets */,
 				AB7E41CD261AE7ED004D9926 /* LaunchScreen.storyboard */,
 				AB7E41D0261AE7ED004D9926 /* Info.plist */,
 			);
 			path = CounterRxSwift;
+			sourceTree = "<group>";
+		};
+		AB7E41F5261AF741004D9926 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E41F0261AF65E004D9926 /* TopViewController.swift */,
+				AB7E41C6261AE7E8004D9926 /* ClosureViewController.swift */,
+				AB7E41FC261AF89F004D9926 /* DelegateViewController.swift */,
+				AB370C8D261B0DCD00554B21 /* RxSwiftViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB7E41F6261AF752004D9926 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E41F1261AF65E004D9926 /* TopViewController.xib */,
+				AB7E41DD261AE9CA004D9926 /* ClosureViewController.xib */,
+				AB7E4201261AF8BD004D9926 /* DelegateViewController.xib */,
+				AB370C8E261B0DCD00554B21 /* RxSwiftViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB7E41F7261AF756004D9926 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E41EA261AF0D8004D9926 /* ClosureCounterViewModel.swift */,
+				AB370C99261B0FB700554B21 /* RxCounterViewModel.swift */,
+				AB370C93261B0E5800554B21 /* CounterViewModelInput.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AB7E41FB261AF7E9004D9926 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E41F8261AF7E4004D9926 /* CounterPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		C4E90C149B44CFCFE83F0611 /* Pods */ = {
@@ -150,9 +220,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7E41F3261AF65E004D9926 /* TopViewController.xib in Resources */,
 				AB7E41CF261AE7ED004D9926 /* LaunchScreen.storyboard in Resources */,
-				AB7E41DE261AE9CA004D9926 /* ViewController.xib in Resources */,
+				AB7E41DE261AE9CA004D9926 /* ClosureViewController.xib in Resources */,
 				AB7E41CC261AE7ED004D9926 /* Assets.xcassets in Resources */,
+				AB370C90261B0DCE00554B21 /* RxSwiftViewController.xib in Resources */,
+				AB7E4202261AF8BD004D9926 /* DelegateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,9 +278,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7E41C7261AE7E8004D9926 /* ViewController.swift in Sources */,
+				AB7E41C7261AE7E8004D9926 /* ClosureViewController.swift in Sources */,
+				AB7E41EB261AF0D8004D9926 /* ClosureCounterViewModel.swift in Sources */,
 				AB7E41C3261AE7E8004D9926 /* AppDelegate.swift in Sources */,
+				AB7E41FD261AF89F004D9926 /* DelegateViewController.swift in Sources */,
+				AB370C94261B0E5800554B21 /* CounterViewModelInput.swift in Sources */,
+				AB370C9A261B0FB700554B21 /* RxCounterViewModel.swift in Sources */,
+				AB370C8F261B0DCD00554B21 /* RxSwiftViewController.swift in Sources */,
 				AB7E41C5261AE7E8004D9926 /* SceneDelegate.swift in Sources */,
+				AB7E41F2261AF65E004D9926 /* TopViewController.swift in Sources */,
+				AB7E41F9261AF7E4004D9926 /* CounterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
