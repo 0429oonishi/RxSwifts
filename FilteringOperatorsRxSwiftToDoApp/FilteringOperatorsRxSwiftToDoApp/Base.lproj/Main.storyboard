@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Good List-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="FilteringOperatorsRxSwiftToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tlL-M4-1ZX">
+                                <rect key="frame" x="104" y="74" width="206" height="32"/>
+                                <segments>
+                                    <segment title="High"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Medium"/>
+                                </segments>
+                                <connections>
+                                    <action selector="prioritySegmentedControlDidTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="0PX-k1-L0Y"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Dh-Co-sLl">
+                                <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskListTableViewCell" id="szL-8j-XYh">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="szL-8j-XYh" id="JZC-5p-Gzu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEW-H4-2Xv">
+                                <rect key="frame" x="310" y="71.5" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="addButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qat-5C-Cn8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Dh-Co-sLl" secondAttribute="bottom" id="0S9-X0-vIg"/>
+                            <constraint firstItem="3Dh-Co-sLl" firstAttribute="top" secondItem="tlL-M4-1ZX" secondAttribute="bottom" constant="10" id="2gV-zw-suq"/>
+                            <constraint firstItem="3Dh-Co-sLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F7p-Dn-LNq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Dh-Co-sLl" secondAttribute="trailing" id="PEs-Yb-fpk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mEW-H4-2Xv" secondAttribute="trailing" id="YLE-AJ-em4"/>
+                            <constraint firstItem="mEW-H4-2Xv" firstAttribute="centerY" secondItem="tlL-M4-1ZX" secondAttribute="centerY" id="bhU-UE-KaW"/>
+                            <constraint firstItem="tlL-M4-1ZX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ekb-z2-DPn"/>
+                            <constraint firstItem="mEW-H4-2Xv" firstAttribute="leading" secondItem="tlL-M4-1ZX" secondAttribute="trailing" id="nvy-BK-9R0"/>
+                            <constraint firstItem="tlL-M4-1ZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wfg-1z-PcF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Good List" id="0gm-KI-0NU">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="Rke-G4-LgJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="prioritySegmentedControl" destination="tlL-M4-1ZX" id="2EH-WR-7KF"/>
+                        <outlet property="tableView" destination="3Dh-Co-sLl" id="nTJ-my-NfF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="124"/>
+        </scene>
+        <!--Add Task-->
+        <scene sceneID="7pb-Jd-h0v">
+            <objects>
+                <viewController storyboardIdentifier="AddTaskViewController" id="Ohv-ur-tgX" customClass="AddTaskViewController" customModule="FilteringOperatorsRxSwiftToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7z9-Rg-7a9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uzp-08-ujX">
+                                <rect key="frame" x="104" y="74" width="206" height="32"/>
+                                <segments>
+                                    <segment title="High"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Low"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvP-lP-g6m">
+                                <rect key="frame" x="60" y="205" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X76-4Z-UFM">
+                                <rect key="frame" x="320" y="71.5" width="84" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="saveButtonDidTapped:" destination="Ohv-ur-tgX" eventType="touchUpInside" id="2Hz-DC-ht2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0bK-Ts-t9R"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="X76-4Z-UFM" firstAttribute="leading" secondItem="Uzp-08-ujX" secondAttribute="trailing" constant="10" id="2i0-6V-i7J"/>
+                            <constraint firstItem="Uzp-08-ujX" firstAttribute="top" secondItem="0bK-Ts-t9R" secondAttribute="top" constant="30" id="6YX-XT-cck"/>
+                            <constraint firstItem="Uzp-08-ujX" firstAttribute="centerX" secondItem="7z9-Rg-7a9" secondAttribute="centerX" id="Eul-tq-Z9Y"/>
+                            <constraint firstItem="fvP-lP-g6m" firstAttribute="leading" secondItem="0bK-Ts-t9R" secondAttribute="leading" constant="60" id="I9i-ha-6hq"/>
+                            <constraint firstItem="fvP-lP-g6m" firstAttribute="centerX" secondItem="7z9-Rg-7a9" secondAttribute="centerX" id="Rqn-8l-QCE"/>
+                            <constraint firstItem="X76-4Z-UFM" firstAttribute="centerY" secondItem="Uzp-08-ujX" secondAttribute="centerY" id="avB-ua-Pas"/>
+                            <constraint firstItem="0bK-Ts-t9R" firstAttribute="trailing" secondItem="X76-4Z-UFM" secondAttribute="trailing" constant="10" id="dmm-ph-XTx"/>
+                            <constraint firstItem="0bK-Ts-t9R" firstAttribute="trailing" secondItem="fvP-lP-g6m" secondAttribute="trailing" constant="60" id="gw8-02-Dk6"/>
+                            <constraint firstItem="fvP-lP-g6m" firstAttribute="top" secondItem="Uzp-08-ujX" secondAttribute="bottom" constant="100" id="rVb-Ou-Rj7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Task" id="D28-9F-3RV">
+                        <barButtonItem key="rightBarButtonItem" title="save" id="s4w-Zk-zx2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="prioritySegmentedControl" destination="Uzp-08-ujX" id="060-dz-QbE"/>
+                        <outlet property="titleTextField" destination="fvP-lP-g6m" id="5eC-uw-DbV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfc-mj-m8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
